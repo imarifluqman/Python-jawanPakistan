@@ -1,0 +1,204 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "xpython",
+      "display_name": "Python 3.13 (XPython)",
+      "language": "python"
+    },
+    "language_info": {
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "version": "3.13.1"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "d5abfac7-4f54-4617-b8ab-2c490add7745",
+      "cell_type": "code",
+      "source": "print(\"hello world\")",
+      "metadata": {
+        "trusted": true,
+        "jupyter": {
+          "source_hidden": true
+        }
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "hello world\n"
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "id": "612ba462-86bc-4a54-b076-d9a2a223c410",
+      "cell_type": "code",
+      "source": "print(\"Twinkle, twinkle, little star,\")\nprint(\"\\tHow I wonder what you are!\")\nprint(\"\\t\\tUp above the world so high,\")\nprint(\"\\t\\tLike a diamond in the sky.\")\nprint(\"Twinkle, twinkle, little star,\")\nprint(\"\\tHow I wonder what you are\")\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Twinkle, twinkle, little star,\n\tHow I wonder what you are!\n\t\tUp above the world so high,\n\t\tLike a diamond in the sky.\nTwinkle, twinkle, little star,\n\tHow I wonder what you are\n"
+        }
+      ],
+      "execution_count": 2
+    },
+    {
+      "id": "a0622035-1497-4d1a-a926-03d4b0b3e596",
+      "cell_type": "code",
+      "source": "import sys\n\nprint(\"Python Version:\")\nprint(sys.version)",
+      "metadata": {
+        "trusted": true,
+        "jupyter": {
+          "source_hidden": true
+        }
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Python Version:\n3.13.1 (main, Apr 30 2025, 11:41:46) [Clang 20.0.0git (https:/github.com/llvm/llvm-project 1d810ece2b2c8fab7772049386\n"
+        }
+      ],
+      "execution_count": 3
+    },
+    {
+      "id": "25d5b574-29a5-42aa-86b0-57dcdc2a2ea2",
+      "cell_type": "code",
+      "source": "import datetime\n\nnow = datetime.datetime.now()\nprint(\"Current date and time:\")\nprint(now)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Current date and time:\n2026-02-26 07:07:59.112000\n"
+        }
+      ],
+      "execution_count": 4
+    },
+    {
+      "id": "7b057f78-e185-4f0c-bd62-e965cdcc90e5",
+      "cell_type": "code",
+      "source": "import math\n\nradius = float(input(\"Enter radius: \"))\narea = math.pi * radius ** 2\n\nprint(\"Area of circle is:\", area)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter radius:  34\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Area of circle is: 3631.681107549801\n"
+        }
+      ],
+      "execution_count": 5
+    },
+    {
+      "id": "fbaaf0d3-d16e-447f-aba9-244951647bd9",
+      "cell_type": "code",
+      "source": "first_name = input(\"Enter first name: \")\nlast_name = input(\"Enter last name: \")\n\nprint(last_name + \" \" + first_name)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter first name:  Arif\nEnter last name:  Luqman \n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Luqman  Arif\n"
+        }
+      ],
+      "execution_count": 6
+    },
+    {
+      "id": "a539a5ba-25d2-4df6-98ba-654daf969ca6",
+      "cell_type": "code",
+      "source": "num1 = float(input(\"Enter first number: \"))\nnum2 = float(input(\"Enter second number: \"))\n\nresult = num1 + num2\n\nprint(\"Addition is:\", result)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter first number:  34\nEnter second number:  45\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Addition is: 79.0\n"
+        }
+      ],
+      "execution_count": 7
+    },
+    {
+      "id": "cba76522-38cb-45c7-9916-c5d39b70392a",
+      "cell_type": "code",
+      "source": "marks = []\ntotal = 0\n\nfor i in range(1, 6):\n    mark = float(input(f\"Enter marks of subject {i}: \"))\n    marks.append(mark)\n    total += mark\n\npercentage = total / 5\n\nprint(\"Total Marks:\", total)\nprint(\"Percentage:\", percentage)\n\nif percentage >= 80:\n    grade = \"A\"\nelif percentage >= 70:\n    grade = \"B\"\nelif percentage >= 60:\n    grade = \"C\"\nelif percentage >= 50:\n    grade = \"D\"\nelse:\n    grade = \"Fail\"\n\nprint(\"Grade:\", grade)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter marks of subject 1:  45\nEnter marks of subject 2:  65\nEnter marks of subject 3:  65\nEnter marks of subject 4:  34\nEnter marks of subject 5:  56\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Total Marks: 265.0\nPercentage: 53.0\nGrade: D\n"
+        }
+      ],
+      "execution_count": 8
+    },
+    {
+      "id": "e16ccd6a-5a6d-46e0-b862-37d62400eb99",
+      "cell_type": "code",
+      "source": "num = int(input(\"Enter a number: \"))\n\nif num % 2 == 0:\n    print(\"Number is Even\")\nelse:\n    print(\"Number is Odd\")",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdin",
+          "text": "Enter a number:  567\n"
+        },
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Number is Odd\n"
+        }
+      ],
+      "execution_count": 9
+    },
+    {
+      "id": "2ea51435-d3e7-4d58-8e69-7d5df44bc17e",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
