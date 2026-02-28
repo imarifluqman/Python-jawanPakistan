@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "kernelspec": {
+      "name": "python",
+      "display_name": "Python (Pyodide)",
+      "language": "python"
+    },
+    "language_info": {
+      "codemirror_mode": {
+        "name": "python",
+        "version": 3
+      },
+      "file_extension": ".py",
+      "mimetype": "text/x-python",
+      "name": "python",
+      "nbconvert_exporter": "python",
+      "pygments_lexer": "ipython3",
+      "version": "3.8"
+    }
+  },
+  "nbformat_minor": 5,
+  "nbformat": 4,
+  "cells": [
+    {
+      "id": "5a34b4f8-21e2-41ae-8631-25b8781e5013",
+      "cell_type": "code",
+      "source": "my_list = [10, 20, 30, 40, 50]\n\nprint(\"Length of list is:\", len(my_list))\n",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Length of list is: 5\n"
+        }
+      ],
+      "execution_count": 1
+    },
+    {
+      "id": "4fb24799-db19-4bf7-9c1e-0a5e412f6966",
+      "cell_type": "code",
+      "source": "numbers = [1, 2, 3, 4, 5]\n\ntotal = sum(numbers)\nprint(\"Sum is:\", total)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Sum is: 15\n"
+        }
+      ],
+      "execution_count": 7
+    },
+    {
+      "id": "8a710417-3b26-48c5-bf43-47f7c61a24dd",
+      "cell_type": "code",
+      "source": "numbers = [1, 2, 3, 4, 5]\n\ntotal = 0\nfor num in numbers:\n    total += num\n\nprint(\"Sum is:\", total)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Sum is: 15\n"
+        }
+      ],
+      "execution_count": 6
+    },
+    {
+      "id": "b876597f-8851-4dd7-a441-aafd09e210b9",
+      "cell_type": "code",
+      "source": "numbers = [10, 25, 5, 80, 40]\n\nlargest = max(numbers)\nprint(\"Largest number is:\", largest)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Largest number is: 80\n"
+        }
+      ],
+      "execution_count": 5
+    },
+    {
+      "id": "1fae36ec-67d4-4e78-8ec8-536827dd90af",
+      "cell_type": "code",
+      "source": "numbers = [10, 25, 5, 80, 40]\n\nlargest = numbers[0]\n\nfor num in numbers:\n    if num > largest:\n        largest = num\n\nprint(\"Largest number is:\", largest)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "Largest number is: 80\n"
+        }
+      ],
+      "execution_count": 4
+    },
+    {
+      "id": "3ec05e17-9928-4b91-9b54-8f6af11f9466",
+      "cell_type": "code",
+      "source": "a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\n\nfor num in a:\n    if num < 5:\n        print(num)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "1\n1\n2\n3\n"
+        }
+      ],
+      "execution_count": 3
+    },
+    {
+      "id": "c9a25eca-3015-4817-9541-e726f6b43cb7",
+      "cell_type": "code",
+      "source": "a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]\n\nresult = [num for num in a if num < 5]\nprint(result)",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": "[1, 1, 2, 3]\n"
+        }
+      ],
+      "execution_count": 2
+    },
+    {
+      "id": "ba1b3861-210f-4c75-99fd-6053560bf0ac",
+      "cell_type": "code",
+      "source": "",
+      "metadata": {
+        "trusted": true
+      },
+      "outputs": [],
+      "execution_count": null
+    }
+  ]
+}
